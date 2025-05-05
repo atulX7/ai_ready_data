@@ -1,0 +1,22 @@
+[
+  {
+    "file": "noisy_drug_info.txt",
+    "completeness": 0.5,
+    "accuracy": 0.5,
+    "secure": 1.0,
+    "quality": 0.818,
+    "timeliness": 0.5,
+    "token_count": 85,
+    "ai_trust_score": 0.66
+  },
+  {
+    "file": "cymbalta.txt",
+    "completeness": 1.0,
+    "accuracy": 0.9016648168701443,
+    "secure": 0.0,
+    "quality": 0.0,
+    "timeliness": 0.5,
+    "token_count": 22237,
+    "ai_trust_score": 0.48
+  }
+]

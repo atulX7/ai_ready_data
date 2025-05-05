@@ -1,0 +1,16 @@
+streamlit==1.33.0
+langchain==0.1.13
+langchain-community==0.0.34
+openai==1.23.2
+huggingface-hub==0.23.1
+tiktoken==0.6.0
+faiss-cpu==1.7.4
+pymupdf==1.23.24
+python-docx==1.1.0
+textstat==0.7.3
+pyspellchecker==0.7.0
+matplotlib==3.8.4
+pandas==2.2.2
+python-dotenv==1.0.1
+requests==2.31.0
+

@@ -1,0 +1,692 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<head>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+
+    <title>DailyMed  </title>
+
+
+    <!--[if lt IE 9]>
+    <script src="/public/dailymed-cf/js/dist/html5shiv.min.3c56770289c2.js"></script>
+    <![endif]-->
+
+
+    <script src="/public/dailymed-cf/js/dist/modernizr-3.11.4.min.921695bdca0e.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/public/dailymed-cf/css/dist/skeleton.min.fb2db142f138.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/public/dailymed-cf/css/dist/jquery.jqzoom.min.89392bd41573.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/public/dailymed-cf/css/dist/style.min.59b4b7f34cb7.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/public/dailymed-cf/css/dist/header-search.min.eea1281afe55.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/public/dailymed-cf/css/dist/responsive.min.6324314a027d.css">
+    <link rel="stylesheet" type="text/css" media="print" href="/public/dailymed-cf/css/dist/print.min.5ba1333521c7.css">
+
+
+    <!--[if !IE]><!-->
+    <link rel="stylesheet" type="text/css" media="all" href="/public/dailymed-cf/css/dist/responsive-tables.min.89cf9d65e02d.css">
+    <!--<![endif]-->
+
+    <link rel="icon" href="/public/dailymed-cf/images/favicons/favicon.a3a2ecfedb48.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/dailymed-cf/images/favicons/favicon.a3a2ecfedb48.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="57x57"
+          href="/public/dailymed-cf/images/favicons/apple-touch-icon-57x57.551b40214e2e.png">
+    <link rel="apple-touch-icon" sizes="114x114"
+          href="/public/dailymed-cf/images/favicons/apple-touch-icon-114x114.18e3a547d8d8.png">
+    <link rel="apple-touch-icon" sizes="72x72"
+          href="/public/dailymed-cf/images/favicons/apple-touch-icon-72x72.4cd403cdd8f5.png">
+    <link rel="apple-touch-icon" sizes="144x144"
+          href="/public/dailymed-cf/images/favicons/apple-touch-icon-144x144.655e01119648.png">
+    <link rel="apple-touch-icon" sizes="60x60"
+          href="/public/dailymed-cf/images/favicons/apple-touch-icon-60x60.c667e1428dbe.png">
+    <link rel="apple-touch-icon" sizes="120x120"
+          href="/public/dailymed-cf/images/favicons/apple-touch-icon-120x120.45df671d0fa9.png">
+    <link rel="apple-touch-icon" sizes="76x76"
+          href="/public/dailymed-cf/images/favicons/apple-touch-icon-76x76.14a7deb12638.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+          href="/public/dailymed-cf/images/favicons/apple-touch-icon-152x152.e3d4eeb542e1.png">
+    <link rel="icon" type="image/png" href="/public/dailymed-cf/images/favicons/favicon-196x196.72e09c75d674.png"
+          sizes="196x196">
+    <link rel="icon" type="image/png" href="/public/dailymed-cf/images/favicons/favicon-160x160.8d5774747cd8.png"
+          sizes="160x160">
+    <link rel="icon" type="image/png" href="/public/dailymed-cf/images/favicons/favicon-96x96.2b6a2c65a1b6.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/public/dailymed-cf/images/favicons/favicon-16x16.dc240103492d.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/public/dailymed-cf/images/favicons/favicon-32x32.af3426e58db1.png" sizes="32x32">
+    <meta name="msapplication-config" content="/public/dailymed-cf/images/favicons/browserconfig.661265bbe824.xml">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/public/dailymed-cf/images/favicons/mstile-144x144.901f370760b3.png">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="noimageindex, noodp, noydir">
+
+    <meta name="viewport" id="viewport"
+          content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="/public/dailymed-cf/css/dist/magnific-popup.min.7f5c47ac776f.css">
+
+    <meta name="format-detection" content="telephone=no">
+
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KTSCX6');</script>
+
+    <style type="text/css"></style>
+</head>
+<body class="home">
+
+<!-- Google Tag Manager -->
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KTSCX6" height="0" width="0"
+            style="display:none;visibility:hidden" title="googletagmanager"></iframe>
+</noscript>
+<!-- End Google Tag Manager -->
+
+<!-- DailyMed Message Banner -->
+<div class="message-banner"></div>
+<!-- End DailyMed Message Banner -->
+
+<div class="container_1000 bg_shadow">
+    <div style="width: 0; height: 0;"><a href="#" id="top-of-page" aria-label="top of the page"></a></div>
+    
+    <header>
+        <div class="topHeader">
+            <ul id="skip">
+                
+                <li><a href="#skip-main-content" id="anch_1">Skip to Main Content</a></li>
+            </ul>
+
+            <nav class="topHeaderNav">
+                <div class="topNIHLogo mobileview">
+                    <a href="https://www.nih.gov" class="top-logo" title="National Institutes of Health" target="_blank" rel="noopener noreferrer" id="anch_2">
+                        <img src="/public/dailymed-cf/images/nih-toplogo.d2574727ba84.png" alt="NIH Logo">
+                    </a>
+                    <a href="//www.nlm.nih.gov" title="National Library of Medicine" target="_blank" rel="noopener noreferrer" id="anch_3">National Library of Medicine</a>
+                </div>
+                <div class="container">
+                    <div class="sixteen columns">
+                        <div class="topNIHLogo">
+                            <a href="https://www.nih.gov" class="top-logo" title="National Institutes of Health" target="_blank" rel="noopener noreferrer" id="anch_4">
+                                <img src="/public/dailymed-cf/images/nih-toplogo.d2574727ba84.png" alt="NIH Logo">
+                            </a>
+                            <a href="//www.nlm.nih.gov" title="National Library of Medicine" target="_blank" rel="noopener noreferrer" id="anch_5">National Library of Medicine</a>
+                        </div>
+
+                        <ul>
+                            <li class="safety"><a href="//www.accessdata.fda.gov/scripts/medwatch/"
+                                                  target="_blank" rel="noopener noreferrer" title="Safety Reporting and Recalls"
+                                                  id="anch_6">REPORT ADVERSE EVENTS</a> <span>|</span><a
+                                    href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts" target="_blank" rel="noopener noreferrer"
+                                    title="Safety Reporting and Recalls" id="anch_7">Recalls</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="divider"></div>
+        </div>
+        <div class="dailymedlogoprint"><img alt="DailyMed" src="/public/dailymed-cf/images/logo.92e1fa515f68.png"></div>
+        
+
+
+<div class="bottomHeader">
+
+        <div class="header-image">
+
+            <div class="mobile-menu-btn closed hasjs" tabindex="0"></div>
+            <!-- TODO -- do mobile-menu class at last -->
+            <div class="mobile-menu" style="display: none;">
+                <div class="mobile-menu-container">
+                    <div class="pro-menu active">
+                        <div class="first half">
+                            <ul>
+                                <li><a href="/dailymed/index.cfm" id="anch_8">Home</a></li>
+
+                                <li>
+                                    News
+
+                                    <ul>
+                                        <li><a href="/dailymed/dailymed-announcements.cfm" id="anch_9">DailyMed
+                                            Announcements</a></li>
+
+                                        <li><a href="/dailymed/rss-updates.cfm" id="anch_10">Get RSS News
+                                            &amp; Updates</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="/dailymed/about-dailymed.cfm" id="anch_11">About Dailymed</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://support.nlm.nih.gov/support/create-case/"
+                                       target="_blank" rel="noopener noreferrer" id="anch_12">Customer Support</a></li>
+
+                                <li>
+                                    Safety Reporting &amp; Recalls
+
+                                    <ul>
+                                        <li><a href="//www.accessdata.fda.gov/scripts/medwatch/"
+                                               id="anch_13">Report Adverse Events</a></li>
+
+                                        <li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts" id="anch_14">FDA
+                                            Saftey Recalls</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="/dailymed/fda-drug-guidance.cfm" id="anch_15">FDA Resources</a>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="last half">
+                            <ul>
+                                <li>
+                                    NLM SPL Resources
+
+                                    <ul>
+                                        <li>
+                                            <a href="/dailymed/spl-resources.cfm" id="anch_16">Download
+                                                Data</a>
+
+                                            <ul>
+                                                <li><a href="/dailymed/spl-resources-all-drug-labels.cfm"
+                                                       id="anch_17">- All Drug Labels</a></li>
+
+                                                <li><a href="/dailymed/spl-resources-all-indexing-files.cfm"
+                                                       id="anch_18">- All Indexing &amp; REMS Files</a></li>
+
+
+                                                <li><a href="/dailymed/spl-resources-all-mapping-files.cfm"
+                                                       id="anch_19">- All Mapping Files</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="/dailymed/splimage-guidelines.cfm" id="anch_20">SPL
+                                            Image Guidelines</a></li>
+
+                                        <li><a href="/dailymed/spl-resources-presentations-articles.cfm"
+                                               id="anch_21">Articles &amp; Presentations</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    Application Development Support
+
+                                    <ul>
+                                        <li>
+                                            <a href="/dailymed/app-support.cfm" id="anch_22">Resources</a>
+
+                                            <ul>
+                                                <li><a href="/dailymed/app-support-web-services.cfm"
+                                                       id="anch_23">- Web Services</a></li>
+
+
+                                                <li><a href="/dailymed/app-support-mapping-files.cfm"
+                                                       id="anch_24">- Mapping Files</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="/dailymed/help.cfm" id="anch_25">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <a class="logo" href="/dailymed/index.cfm" title="DailyMed" id="anch_26">DailyMed</a>
+
+
+            <div class="header-bg">
+                <img alt="" src="/public/dailymed-cf/images/header-image-bg.d7736b609815.png" title="" width="397" height="145"/>
+            </div>
+
+            <div class="divider"></div>
+        </div>
+        <div class="bottomHeaderContent">
+            <div class="divider"></div>
+
+            <div class="search">
+                <div class="divider_10 nomargin mobileview"></div>
+
+                <form action="/dailymed/search.cfm">
+
+                    <div class="searchNav">
+                        <ul class="searchType">
+                            <li class="all active">
+                                <input class="hidden" name="labeltype" id="labeltype-all" value="all"
+                                       type="radio">
+                                <label for="labeltype-all">All Drugs</label>
+                            </li>
+                            <li class="human">
+                                <input class="hidden" name="labeltype" id="labeltype-human" value="human"
+                                       type="radio">
+                                <label for="labeltype-human">Human Drugs</label>
+
+                            </li>
+                            <li class="animal">
+                                <input class="hidden" name="labeltype" id="labeltype-animal" value="animal" type="radio">
+                                <label for="labeltype-animal">Animal Drugs</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="searchForm">
+                        <div class="searchInput">
+                            <input id="searchQuery" name="query" tabindex="0"
+                                   placeholder="Enter drug, NDC code, drug class, or Set ID"
+                                   autocorrect="off" autocapitalize="off" class="ui-autocomplete-input"
+                                   autocomplete="off" type="text">
+                        </div>
+                        <input class="search" tabindex="0" title="Search" value="Search" type="submit">
+                    </div>
+                </form>
+                <div class="divider"></div>
+                <nav class="bottomHeaderNav">
+                    <h2>More ways to search:</h2>
+
+
+                    <ul class="webview">
+                        <li>
+                            <a href="/dailymed/advanced-search.cfm" title="Advanced Search" id="anch_27">Advanced Search</a>
+                        </li>
+
+                        <li>
+                            <a href="/dailymed/browse-drug-classes.cfm" title="Browse Drug Classes" id="anch_28">Browse Drug Classes</a>
+                        </li>
+
+                        <li>
+                            <a href="/dailymed/archives/index.cfm" title="Labeling Archives" id="anch_29">Labeling Archives</a>
+                        </li>
+                    </ul>
+
+                    <ul class="tabletview mobileview hasjs">
+                        <li>
+                            <a href="/dailymed/advanced-search.cfm" title="Advanced Search" id="anch_31">Advanced Search</a>
+                        </li>
+
+                        <li class="viewmore" tabindex="0">
+                            <a href="#" title="View More" id="anch_32">View More</a>
+
+                            <ul>
+                                <li tabindex="0">
+                                    <a href="/dailymed/browse-drug-classes.cfm" title="Browse Drug Classes" id="anch_33">Browse Drug Classes</a>
+                                </li>
+
+                                <li tabindex="0">
+                                    <a href="/dailymed/archives/index.cfm" title="Labeling Archives" id="anch_34">Labeling Archives</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <noscript>
+                        <ul class="tabletview mobileview no-js">
+                            <li>
+                                <a href="/dailymed/advanced-search.cfm" title="Advanced Search">Advanced Search</a>
+                            </li>
+
+                            <li>
+                                <a href="/dailymed/browse-drug-classes.cfm" title="Browse Drug Classes">Browse Drug Classes</a>
+                            </li>
+
+                            <li>
+                                <a href="/dailymed/archives/index.cfm" title="Labeling Archives">Labeling Archives</a>
+                            </li>
+                        </ul>
+                    </noscript>
+                </nav>
+
+                <div class="divider_10 nomargin"></div>
+            </div>
+
+            <div id="skip-main-content"></div>
+            <div class="info">
+                <p>
+                    The DailyMed database contains <strong>153498</strong> labeling submitted to
+                    the <strong>Food and Drug Administration (FDA)</strong> by companies.
+                    DailyMed does not contain a complete listing of labeling for FDA-regulated products
+                    (e.g., labeling that is not submitted to the FDA).
+                    See <a href="/dailymed/about-dailymed.cfm">ABOUT DAILYMED</a> for more information.
+                </p>
+                <br>
+
+                <div class="social">
+                    Share
+                    <!-- AddThis Button BEGIN -->
+                    <noscript>: JavaScript needed for Sharing tools</noscript>
+                    <div class="addthis_toolbox addthis_default_style addthis_16x16_style" style="vertical-align: top">
+
+                        <a class="email-share"
+                           href="mailto:?subject=DailyMed%20Website%20Information&amp;Body=I%20would%20like%20to%20share%20this%20page%20from%20the%20DailyMed%20website%20with%20you%3A%0A%0ADailyMed%0Ahttps%3A%2F%2Fdailymed%2Enlm%2Enih%2Egov%2Fdailymed%2F%0A%0ADailyMed%20is%20a%20site%20provided%20by%20The%20National%20Library%20of%20Medicine%20%28NLM%29%20and%20is%20the%20official%20provider%20of%20FDA%20drug%20label%20information%20%28package%20inserts%29%2E"
+                           title="Share by Email" id="anch_36"></a>
+
+                        <a class="addthis_button_facebook" id="anch_37"></a>
+                        <a class="addthis_button_twitter" id="anch_38"></a>
+
+                        <a class="at300bs at15nc at15t_compact reveal" title="Bookmark &amp; Share"
+                           href="//www.addthis.com/bookmark.php?pub=DailyMed&amp;title=DailyMed"
+                           target="_blank" rel="noopener noreferrer" style="width: 16px; height: 16px" id="anch_39">
+                            <span style="left: -9999px; position: absolute;">Bookmark &amp; Share</span>
+                            <img style="width:17px"
+                                 src="/public/dailymed-cf/images/addthis-image.54dad878bb13.jpg" alt="Bookmark &amp; Share">
+                        </a>
+                    </div>
+                    <script type="text/javascript">
+                        var addthis_config = {"data_track_addressbar": false};
+                    </script>
+                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-542300cc2097c8b5"></script>
+                    <!-- AddThis Button END -->
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+    </div>
+</header>
+
+    
+    <div class="container">
+        <div class="main-content">
+            
+
+            
+
+    <div class="one-half column">
+        <section>
+            <article>
+                <h2>News</h2>
+                <a href="#" class="" id="anch_40">News</a>
+                <div class="togglecontent">
+                    <div class="news">
+                        <h3><a href="/dailymed/dailymed-announcements.cfm" id="anch_41">DailyMed Announcements</a></h3>
+                        <p><strong>Posted: September 15, 2021</strong></p>
+                        The RxImage API will cease operation on December 31, 2021. 
+                        <br/>
+                        DailyMed will be removing pill images provided by the RxImage API on October 31, 2021. Pill images submitted by labelers with their structured product labeling will remain on DailyMed. 
+                        </p>
+                        <ul>
+                            <li><a class="read-link" href="/dailymed/dailymed-announcements-details.cfm?date=2021-09-15"
+                                   id="anch_45"><strong>More Info</strong></a></li>
+                        </ul>
+                    </div>
+                    <div class="rss">
+                        <h3><a href="/dailymed/rss-updates.cfm" id="anch_46">Get RSS News &amp; Updates</a></h3>
+                        <span class="rss"></span>
+                        <p>The DailyMed RSS feed provides updates and information about new drug labels approved by the FDA
+                            and published on NLM's DailyMed Web site. </p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h2 id="about_dailymed">About DailyMed</h2>
+                <a href="#" class="" id="anch_47">About DailyMed</a>
+                <div class="togglecontent">
+                    <div>
+                        <p>
+                            The <a href="//www.nlm.nih.gov/" target="_blank" rel="noopener noreferrer" id="anch_48">National Library of Medicine</a>
+                            (NLM)’s DailyMed searchable database provides the most recent labeling submitted to the
+                            <a href="https://www.fda.gov/" target="_blank" rel="noopener noreferrer" id="anch_49">Food and Drug Administration</a>
+                            (FDA) by companies and currently in use (i.e., "in use" labeling).
+                            DailyMed contains labeling for prescription and nonprescription drugs for human and
+                            animal use, and for additional products such as medical gases, devices, cosmetics,
+                            dietary supplements, and medical foods. The NLM provides DailyMed to the public and
+                            does not accept advertisements. The labeling on DailyMed is typically reformatted to
+                            make them easier to read.
+                        </p>
+                        <ul>
+                            <li><a class="read-link" href="/dailymed/about-dailymed.cfm" id="anch_50"><strong>More Info</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <div class="one-half column">
+        <aside>
+            <article>
+                <h2>FDA Resources</h2>
+                <a href="#" class="" id="anch_51">FDA Resources</a>
+                <div class="togglecontent">
+                    <div class="fda module">
+                        <h3><a href="/dailymed/fda-drug-guidance.cfm" id="anch_52">SPL, Other Prescription Drug Labeling
+                            Resources, and Guidances</a></h3>
+                        <span class="fda"></span>
+                        <ul>
+                            <li><a href="https://www.fda.gov/industry/fda-resources-data-standards/structured-product-labeling-resources"
+                                   target="_blank" rel="noopener noreferrer" id="anch_53">FDA's Structured Product Labeling Resources</a></li>
+                            <li>
+                                <a href="https://www.fda.gov/drugs/laws-acts-and-rules/plr-requirements-prescribing-information"
+                                   target="_blank" rel="noopener noreferrer" id="anch_54">FDA's Prescription Drug Labeling Resources</a></li>
+                            <li>
+                                <a href="https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs"
+                                   target="_blank" rel="noopener noreferrer" id="anch_55">FDA's Drug Guidances</a></li>
+                            <li>
+                                <a href="https://www.accessdata.fda.gov/scripts/cder/rems/index.cfm"
+                                    target="_blank" rel="noopener noreferrer" id="anch_56">Risk Evaluation and Mitigation Strategies (REMS) </a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </article>
+
+            <article>
+                <h2>NLM SPL Resources</h2>
+                <a href="#" class="" id="anch_56">NLM SPL Resources</a>
+                <div class="togglecontent">
+                    <div class="download module">
+                        <h3>The following Structured Product Labeling (SPL) resources have been created to assist industry
+                            professionals.</h3>
+                        <h3><a href="/dailymed/spl-resources.cfm" id="anch_57">Download Data</a></h3>
+                        <span class="download"></span>
+                        <ul>
+                            <li><a href="/dailymed/spl-resources-all-drug-labels.cfm" id="anch_58">All Drug Labels</a></li>
+                            <li><a href="/dailymed/spl-resources-all-indexing-files.cfm" id="anch_59">All Indexing &amp; REMS
+                                Files</a></li>
+
+                            <li><a href="/dailymed/spl-resources-all-mapping-files.cfm" id="anch_60">All Mapping Files</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="splimage module">
+                        <h3><a href="/dailymed/splimage-guidelines.cfm" id="anch_61">SPL Image Guidelines</a></h3>
+                        <span class="splimage"></span>
+                        <p>Guidelines for SPL image files of oral solid dosage forms that are submitted to the FDA with SPL
+                            documents.</p>
+                    </div>
+
+                    <div class="articles module">
+                        <h3><a href="/dailymed/spl-resources-presentations-articles.cfm" id="anch_62">Presentations &amp; Articles</a>
+                        </h3>
+                        <span class="articles"></span>
+                        <p>Stay informed through recent SPL related articles, online workshops, presentations and more.</p>
+                    </div>
+
+
+                </div>
+            </article>
+
+            <article>
+                <h2>Application Development Support</h2>
+                <a href="#" class="" id="anch_63">Application Development Support</a>
+                <div class="togglecontent">
+                    <div class="support module">
+                        <h3><a href="/dailymed/app-support.cfm" id="anch_64">Resources to Get the Most Out of DailyMed</a></h3>
+                        <span class="support"></span>
+                        <ul>
+                            <li><a href="/dailymed/app-support-web-services.cfm" id="anch_65">Web Services</a></li>
+
+                            <li><a href="/dailymed/app-support-mapping-files.cfm" id="anch_66">Mapping Files</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h2><a href="/dailymed/help.cfm" title="help" id="anch_67">Help</a></h2>
+                <a href="#" class="" id="anch_68">Help</a>
+                <div class="togglecontent">
+                    <div class="help module">
+                        <h3><a href="/dailymed/help.cfm" id="anch_69">Tips on How to Use the Site</a></h3>
+                        <span class="help"></span>
+                        <p>Need help using DailyMed? Learn how to find information you need, how to use a NDC Code, and
+                            more.</p>
+                        <ul>
+                            <li><a class="read-link" href="/dailymed/help.cfm" id="anch_70"><strong>Take a Tour</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+
+        </div>
+    </div>
+    
+
+
+<div class="mobilenav no-js">
+    <ul>
+        <li><a href="/dailymed/index.cfm">Home</a></li>
+        <li>News
+            <ul>
+                <li><a href="/dailymed/dailymed-announcements.cfm">DailyMed Announcements</a></li>
+                <li><a href="/dailymed/rss-updates.cfm">Get RSS News &amp; Updates</a></li>
+            </ul>
+        </li>
+        <li>Search
+            <ul>
+                <li><a href="/dailymed/advanced-search.cfm">Advanced Search</a></li>
+                <li><a href="/dailymed/browse-drug-classes.cfm">Browse Drug Classes</a></li>
+                <li><a href="/dailymed/archives/index.cfm">Labels Archives</a></li>
+            </ul>
+        </li>
+        <li><a href="/dailymed/fda-drug-guidance.cfm">FDA Resources</a></li>
+        <li>NLM SPL Resources
+            <ul>
+                <li><a href="/dailymed/spl-resources.cfm">Download Data</a>
+                    <ul>
+                        <li><a href="/dailymed/spl-resources-all-drug-labels.cfm">All Drug Labels</a></li>
+                        <li><a href="/dailymed/spl-resources-all-indexing-files.cfm">All Index Files</a></li>
+                        <li><a href="/dailymed/spl-resources-all-mapping-files.cfm">All Mapping Files</a></li>
+                    </ul>
+                </li>
+                <li><a href="/dailymed/splimage-guidelines.cfm">SPL Image Guidelines</a></li>
+                <li><a href="/dailymed/spl-resources-presentations-articles.cfm">Presentations &amp; Articles</a></li>
+            </ul>
+        </li>
+        <li>Application Development Support
+            <ul>
+                <li><a href="/dailymed/app-support.cfm">Resources</a>
+                    <ul>
+                        <li><a href="/dailymed/app-support-web-services.cfm">Web Services</a></li>
+                        <li><a href="/dailymed/app-support-mapping-files.cfm">Mapping Files</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="/dailymed/help.cfm">Help</a></li>
+    </ul>
+</div>
+<footer class="mainFooter">
+    <div class="container">
+        <div class="three columns">
+         <div class="nihnlmlogoprint"><img src="/public/dailymed-cf/images/nihnlmlogoprint.379a209ae3f3.png" alt="NIH NLM Logo"></div>
+            <a href="//www.nlm.nih.gov/" class="logo" title="National Library of Medicine | National Institutes of Health"><img src="/public/dailymed-cf/images/footer-logo.7ce0a2477523.png" width="109" height="37" alt="National Library of Medicine | National Institutes of Health" title="National Library of Medicine | National Institutes of Health" /></a>
+        </div>
+
+        <div id="share" class="thirteen columns">
+            <div class="footer-links">
+                <ul class="primary">
+                    <li><a href="/dailymed/about-dailymed.cfm" title="About DailyMed">About DailyMed</a><span>|</span></li>
+                    <li><a href="https://support.nlm.nih.gov/support/create-case/" target="_blank" rel="noopener noreferrer" title="Contact Us">Customer Support</a><span>|</span></li>
+                    <li><a href="//www.nlm.nih.gov/copyright.html" title="Copyright" target="_blank" rel="bookmark noopener noreferrer">Copyright</a><span>|</span></li>
+                    <li><a href="//www.nlm.nih.gov/privacy.html" title="Privacy" target="_blank" rel="bookmark noopener noreferrer">Privacy</a><span>|</span></li>
+                    <li><a href="//www.nlm.nih.gov/accessibility.html" title="Web Accessibility" target="_blank" rel="bookmark noopener noreferrer">Web Accessibility</a><span>|</span></li>
+                    <li><a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html" title="HHS Vulnerability Disclosure" target="_blank"   rel="bookmark noopener noreferrer">HHS Vulnerability Disclosure</a></li>
+                </ul>
+
+                <ul class="secondary">
+                    <li><a href="https://www.nih.gov/" title="National Institutes of Health" target="_blank" rel="bookmark noopener noreferrer">National Institutes of Health</a><span>|</span></li>
+                    <li><a href="//www.nlm.nih.gov/" title="National Library of Medicine" target="_blank" rel="bookmark noopener noreferrer">National Library of Medicine</a><span>|</span></li>
+                    <li><a href="https://www.hhs.gov/" title="Health &amp; Human Services" target="_blank" rel="bookmark noopener noreferrer">Health &amp; Human Services</a></li>
+                </ul>
+
+                <ul class="secondary mobile">
+                    <li><a href="https://www.nih.gov/" title="National Institutes of Health" target="_blank" rel="bookmark noopener noreferrer">NIH</a><span>|</span></li>
+                    <li><a href="//www.nlm.nih.gov/" title="National Library of Medicine" target="_blank" rel="bookmark noopener noreferrer">NLM</a><span>|</span></li>
+                    <li><a href="https://www.hhs.gov/" title="Health &amp; Human Services" target="_blank" rel="bookmark noopener noreferrer">Health &amp; Human Services</a></li>
+                </ul>
+
+                <div class="social">
+                    Share
+                    <!-- AddThis Button BEGIN -->
+                    <noscript>: JavaScript needed for Sharing tools</noscript>
+                    <div class="addthis_toolbox addthis_default_style addthis_16x16_style" style="vertical-align: top">
+
+                        <a class="email-share" href="mailto:?subject=DailyMed%20Website%20Information&amp;Body=I%20would%20like%20to%20share%20this%20page%20from%20the%20DailyMed%20website%20with%20you%3A%0A%0AAbout%0Ahttps%3A%2F%2Fdailymed%2Enlm%2Enih%2Egov%2Fdailymed%2Fabout%2Ddailymed%0A%0ADailyMed%20is%20a%20site%20provided%20by%20The%20National%20Library%20of%20Medicine%20%28NLM%29%20and%20is%20the%20official%20provider%20of%20FDA%20drug%20label%20information%20%28package%20inserts%29%2E" title="Share by Email"></a>
+
+                        <a class="addthis_button_facebook"></a>
+                        <a class="addthis_button_twitter"></a>
+                        <a class="at300bs at15nc at15t_compact reveal" title="Bookmark &amp; Share" href="//www.addthis.com/bookmark.php?pub=DailyMed&amp;title=DailyMed" target="_blank" rel="noopener noreferrer" style="width: 16px; height: 16px">
+                            <span style="left: -9999px; position: absolute;">Bookmark &amp; Share</span>
+                            <img style="width:17px;" src="/public/dailymed-cf/images/addthis-image.54dad878bb13.jpg" alt="Bookmark &amp; Share">
+                        </a>
+                    </div>
+                    <!-- AddThis Button END -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+</footer>
+<div class="divider"></div>
+</div>
+
+<div class="to-top"></div>
+
+<!-- this div is only for jQuery -->
+<div class="search-results">
+    <div class="filter-drop"></div>
+</div>
+
+<div class="webview"></div>
+<div class="hide-on-mobile"></div>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    if (typeof jQuery == 'undefined') {
+        document.write("\x3Cscript type='text/javascript' src='/public/dailymed-cf/js/dist/jquery-3.5.1.min.dc5e7f18c8d3.js'>\x3C/script>");
+    }
+</script>
+
+<script type="text/javascript">
+    var basepath = "/dailymed";
+    var availableClasses = '4-HYDROXYPHENYL-PYRUVATE DIOXYGENASE INHIBITOR,,5-ALPHA REDUCTASE INHIBITOR,,5-ALPHA REDUCTASE INHIBITORS,,5-LIPOXYGENASE INHIBITOR,,5-LIPOXYGENASE INHIBITORS,,ACETYL ALDEHYDE DEHYDROGENASE INHIBITORS,,ACETYLCHOLINE RELEASE INHIBITOR,,ACETYLCHOLINE RELEASE INHIBITORS,,ACETYLCHOLINE RELEASING AGENT,,ACIDIFYING ACTIVITY,,ACTINOMYCIN,,ACTIVELY ACQUIRED IMMUNITY,,ADENOSINE RECEPTOR AGONIST,,ADENOSINE RECEPTOR AGONISTS,,ADENOVIRUS VACCINES,,ADRENAL STEROID SYNTHESIS INHIBITOR,,ADRENAL STEROID SYNTHESIS INHIBITORS,,ADRENERGIC AGONISTS,,ADRENERGIC ALPHA1-AGONISTS,,ADRENERGIC ALPHA2-AGONISTS,,ADRENERGIC ALPHA-AGONISTS,,ADRENERGIC ALPHA-ANTAGONISTS,,ADRENERGIC BETA1-ANTAGONISTS,,ADRENERGIC BETA2-AGONISTS,,ADRENERGIC BETA2-ANTAGONISTS,,ADRENERGIC BETA3-AGONISTS,,ADRENERGIC BETA-AGONISTS,,ADRENERGIC BETA-ANTAGONISTS,,ADRENERGIC RECEPTOR AGONIST,,ADRENOCORTICOTROPIC HORMONE,,ALDEHYDE DEHYDROGENASE INHIBITOR,,ALDOSTERONE ANTAGONIST,,ALDOSTERONE ANTAGONISTS,,ALKYLATING ACTIVITY,,ALKYLATING DRUG,,ALLERGENS,,ALLOGENEIC CORD BLOOD HEMATOPOIETIC PROGENITOR CELL THERAPY,,ALLOGENEIC CULTURED CELL SCAFFOLD,,ALLYLAMINE ANTIFUNGAL,,ALPHA-1 ADRENERGIC AGONIST,,ALPHA-ADRENERGIC AGONIST,,ALPHA-ADRENERGIC BLOCKER,,ALPHA-GLUCOSIDASE INHIBITOR,,ALPHA GLUCOSIDASE INHIBITORS,,ALPHA-PARTICLE EMITTING ACTIVITY,,ALUMINUM COMPLEX,,ALVEOLAR SURFACE TENSION REDUCTION,,AMIDE LOCAL ANESTHETIC,,AMINO ACID,,AMINOGLYCOSIDE ANTIBACTERIAL,,AMINOKETONE,,AMINOSALICYLATE,,AMMONIUM ION BINDING ACTIVITY,,AMPA RECEPTOR ANTAGONISTS,,AMPHENICOL-CLASS ANTIBACTERIAL,,AMPHETAMINE ANORECTIC,,AMYLIN AGONISTS,,AMYLIN ANALOG,,ANALOGS/DERIVATIVES,,ANDROGEN,,ANDROGEN RECEPTOR AGONISTS,,ANDROGEN RECEPTOR ANTAGONISTS,,ANDROGEN RECEPTOR INHIBITOR,,ANGIOTENSIN 2 RECEPTOR ANTAGONISTS,,ANGIOTENSIN 2 RECEPTOR BLOCKER,,ANGIOTENSIN 2 TYPE 1 RECEPTOR ANTAGONISTS,,ANGIOTENSIN CONVERTING ENZYME INHIBITOR,,ANGIOTENSIN-CONVERTING ENZYME INHIBITORS,,ANTHELMINTIC,,ANTHRACYCLINE TOPOISOMERASE INHIBITOR,,ANTHRAX PROTECTIVE ANTIGEN-DIRECTED ANTIBODY,,ANTHRAX PROTECTIVE ANTIGEN-DIRECTED ANTIBODY INTERACTIONS,,ANTI-ANGINAL,,ANTIARRHYTHMIC,,ANTIBODY-SURFACE PROTEIN INTERACTIONS,,ANTICHOLINERGIC,,ANTI-COAGULANT,,ANTIDIARRHEAL,,ANTIDOTE,,ANTIDOTE FOR ACETAMINOPHEN OVERDOSE,,ANTIEMETIC,,ANTI-EPILEPTIC AGENT,,ANTIFIBRINOLYTIC AGENT,,ANTIGEN NEUTRALIZATION,,ANTIHISTAMINE,,ANTIHYPOGLYCEMIC AGENT,,ANTI-IGE,,ANTI-INHIBITOR COAGULANT COMPLEX,,ANTILEISHMANIAL,,ANTIMALARIAL,,ANTIMETABOLITE,,ANTIMETABOLITE IMMUNOSUPPRESSANT,,ANTIMYCOBACTERIAL,,ANTIPARASITIC,,ANTIPROTOZOAL,,ANTIRHEUMATIC AGENT,,ANTISENSE OLIGONUCLEOTIDE,,ANTISEPTIC,,ANTIVENIN,,ANTIVENINS,,APOLIPOPROTEIN B-100 SYNTHESIS INHIBITOR,,APPETITE SUPPRESSION,,AROMATASE INHIBITOR,,AROMATASE INHIBITORS,,AROMATIC AMINO ACID DECARBOXYLATION INHIBITOR,,AROMATIC AMINO ACID,,ARTERIOLAR VASODILATION,,ARTERIOLAR VASODILATOR,,ASPARAGINE-SPECIFIC ENZYME,,ATYPICAL ANTIPSYCHOTIC,,AUTOLOGOUS CELLULAR IMMUNOTHERAPY,,AUTOLOGOUS C
